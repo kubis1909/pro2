@@ -1,12 +1,12 @@
-package models;
+package cz.uhk.pro2.models;
 
-public class Main{
+public class PizzaMenuItem {
 
     private String name;
     private String desception;
     private int price;
 
-    public Main(String name, String desception, int price){
+    public PizzaMenuItem(String name, String desception, int price){
         this.name = name;
         this.desception = desception;
         this.price = price;
@@ -34,5 +34,10 @@ public class Main{
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString(){
+        return name + " - " + desception + " - " + price + " czk ";
     }
 }
